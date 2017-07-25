@@ -16,6 +16,7 @@
 		C6B6352C1F215F0F0025F397 /* UIView+UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6352B1F215F0F0025F397 /* UIView+UtilitiesTests.swift */; };
 		C6B6352F1F215FED0025F397 /* ThreadSafeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6352E1F215FED0025F397 /* ThreadSafeValue.swift */; };
 		C6B635321F2160C50025F397 /* ThreadSafeValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B635311F2160C50025F397 /* ThreadSafeValueTests.swift */; };
+		C6C3B70D1F27DC2E00E6246E /* UIApplication+Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C3B70C1F27DC2E00E6246E /* UIApplication+Utilites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		C6B6352B1F215F0F0025F397 /* UIView+UtilitiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+UtilitiesTests.swift"; sourceTree = "<group>"; };
 		C6B6352E1F215FED0025F397 /* ThreadSafeValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeValue.swift; sourceTree = "<group>"; };
 		C6B635311F2160C50025F397 /* ThreadSafeValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeValueTests.swift; sourceTree = "<group>"; };
+		C6C3B70C1F27DC2E00E6246E /* UIApplication+Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Utilites.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				C6B635231F215E190025F397 /* Thread+Utilites.swift */,
 				C6B635251F215E5D0025F397 /* UIView+Utilities.swift */,
+				C6C3B70C1F27DC2E00E6246E /* UIApplication+Utilites.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				C6B6352F1F215FED0025F397 /* ThreadSafeValue.swift in Sources */,
 				C6B635241F215E190025F397 /* Thread+Utilites.swift in Sources */,
 				C6B635261F215E5D0025F397 /* UIView+Utilities.swift in Sources */,
+				C6C3B70D1F27DC2E00E6246E /* UIApplication+Utilites.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +460,7 @@
 				C6B6351E1F215DA60025F397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6B6351F1F215DA60025F397 /* Build configuration list for PBXNativeTarget "CommonUtilitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				C6B635211F215DA60025F397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
