@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- Defines thread safe read-write behavior where reads are concurrent and synchronous while writes are serial and asynchronous.
+ Defines thread safe read-write behavior where reads are concurrent and return synchronously. Writes are serial and return asynchronously.
  - parameters:
     - identifer: unique identifer that defines the unique queue used to make reads and writes thread safe for the unsafe value
     - value: value that is desired to be read and written in a thread safe mannner
