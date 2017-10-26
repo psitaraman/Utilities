@@ -52,8 +52,8 @@ extension UIApplication {
         return controller
     }
  
-   /// return copy of any object - useful for blocking passing of object reference
-   static func copyObject<T>() -> T {
-        return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
-   }
+    /// return copy of any reference type - useful for blocking passing of object reference
+    static func copyObject<T: AnyObject>() -> T {
+        return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: T.self)) as! T
+    }
 }
