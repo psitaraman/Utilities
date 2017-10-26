@@ -51,4 +51,8 @@ extension UIApplication {
         
         return controller
     }
+ 
+   static func copyObject<T>() -> T {
+        return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
+   }
 }
