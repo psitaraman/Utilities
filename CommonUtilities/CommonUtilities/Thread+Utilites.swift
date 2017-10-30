@@ -34,18 +34,24 @@ import Foundation
 extension Thread {
     
     /**
-     Executes code block on main thread
+     Executes code block on main thread synchronously or asynchronously
      - parameter block: escaping block of code to be executed
      */
-    static func executeOnMainThread(block: @escaping () -> ()) {
+    static func executeOnMainThread(isSynchronous: Bool = false, block: @escaping () -> ()) {
         
         guard !Thread.isMainThread else {
             block()
             return
         }
         
-        DispatchQueue.main.async {
-            block()
+        if isSynchronous {
+            DispatchQueue.main.sync {
+                block()
+            }
+        } else {
+            DispatchQueue.main.async {
+                block()
+            }
         }
     }
     
