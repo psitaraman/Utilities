@@ -50,7 +50,7 @@ final class ThreadSafeValue<T> {
         // read
         get {
             var val: T?
-            self.queue.sync {
+            self.queue.sync {[unowned self] in
                 val = self.unsafeValue
             }
             return val!
